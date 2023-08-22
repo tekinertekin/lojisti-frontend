@@ -1,11 +1,10 @@
-import logo1 from './1.jpeg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo1} className="App-logo" alt="logo" />
+        <img src="https://github.com/tekinertekin/lojisti-frontend/blob/master/src/1.jpeg?raw=true" className="App-logo" alt="logo" />
         <p>
           Lojisti
         </p>
