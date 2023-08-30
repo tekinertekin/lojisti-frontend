@@ -39,6 +39,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="name"
+                  id="name"
                   placeholder="Your Name"
                   value={values.name || ""}
                   onChange={handleChange}
@@ -49,6 +50,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                 <Input
                   type="text"
                   name="email"
+                  id="email"
                   placeholder="Your Email"
                   value={values.email || ""}
                   onChange={handleChange}
@@ -60,6 +62,7 @@ const Contact = ({ title, content, id, t }: ContactProps) => {
                   placeholder="Your Message"
                   value={values.message || ""}
                   name="message"
+                  id="message"
                   onChange={handleChange}
                 />
                 <ValidationType type="message" />

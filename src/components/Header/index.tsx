@@ -15,6 +15,7 @@ import {
   Outline,
   Span,
 } from "./styles";
+import { Link } from "react-router-dom";
 
 const Header = ({ t }: any) => {
   const [visible, setVisibility] = useState(false);
@@ -46,13 +47,12 @@ const Header = ({ t }: any) => {
         <CustomNavLinkSmall onClick={() => scrollTo("product")}>
           <Span>{t("Ürün")}</Span>
         </CustomNavLinkSmall>
-        <CustomNavLinkSmall
-          style={{ width: "180px" }}
-          onClick={() => scrollTo("contact")}
-        >
-          <Span>
-            <Button>{t("Üye ol")}</Button>
-          </Span>
+        <CustomNavLinkSmall style={{ width: "180px" }}>
+          <Link to='/login'>
+            <Span>
+              <Button>{t("Giriş Yap")}</Button>
+            </Span>
+          </Link>
         </CustomNavLinkSmall>
       </>
     );

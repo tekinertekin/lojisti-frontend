@@ -18,6 +18,7 @@ export interface SvgIconProps {
 }
 
 export interface InputProps {
+  id: string;
   name: string;
   placeholder: string;
   t: any;
