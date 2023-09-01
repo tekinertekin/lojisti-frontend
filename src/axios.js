@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = 'http://16.16.82.200:8000/api/';
+const baseURL = 'https://cert.lojisti.com/api/';
 
 const axiosInstance = axios.create({
     //mode: 'no-cors',
